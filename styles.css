@@ -1,0 +1,86 @@
+/* Estilo da aplicação */
+/* Criando variaveis */
+:root{
+    /* Cores */
+    --cor-primaria: #0044cc;
+    --cor-secundaria: #002266;
+    --cor-fundo: #f0f8ff;
+    --cor-texto: #333;
+    /* Espacamentos */
+    --espaco-xxs: 4px;
+    --espaco-xs: 8px;
+    --espaco-sm: 12px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px;
+    --espaco-xl: 32px;
+    --espaco-xxl: 48px; 
+}
+/* Eu quero mudar o componente html */
+body{
+/* Fonte */
+font-family: Arial, Helvetica, sans-serif;
+/* Margem Externa*/
+margin: 0;
+/* Margem Interna */
+padding: 0;
+/* Cor fundo */
+background-color: var(--cor-fundo);
+/* Cor do texto */
+color: var(--cor-texto);
+}
+
+/* Configuração do container */
+.container{
+    /* tamanho maximo */
+    max-width: 70%;
+    margin: 0 auto;
+    padding: var(--espaco-lg);
+}
+/* Cabecalho */
+header{
+    background-color: var(--cor-primaria);
+    padding: var(--espaco-lg);
+    /* alinhamento do texto */
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+/* Menu de navegacao */
+nav{
+    background-color: var(--cor-secundaria);
+    padding: var(--espaco-sm);
+    text-align: center;
+}
+/* mudar apenas os links do menu */
+nav a{
+    color: white;
+    /* remover o traço embaixo do link */
+    text-decoration: none;
+    /* 10px superior e inferior */
+    /* 20px direita e esquerda */
+    padding: 10px 20px;
+    /* ele ocupa o espaco do texto e/ou a dimensão do componente */
+    display: inline-block;
+}
+/* Configurar o hoover do link */
+nav a:hover{
+    background-color: var(--cor-primaria);
+}
+
+/* Configurar o main */
+main{
+    padding: var(--espaco-lg);
+    text-align: center;
+}
+/* Rodape */
+footer{
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: var(--espaco-sm);
+    /* Fixar o conteudo a tela */
+    position: fixed;
+    /* fixar no final da pagina */
+    bottom: 0;
+    width: 100%;
+}
